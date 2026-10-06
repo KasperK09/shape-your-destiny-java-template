@@ -1,12 +1,16 @@
 package org.example;
 
 public class Rectangle {
-    
-    public double getArea() {
-        return //double
+
+    private double length;
+    private double width;
+
+    public double getArea(double length, double width) {
+        return length * width;
     }
     
+    //does not like it when I do @Override
     public double getPerimeter() {
-        return //double
+        return (2 * length) * (2 * width);
     }
 }
